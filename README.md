@@ -1,0 +1,2 @@
+# HTMail
+HTML email builder
