@@ -1,0 +1,16 @@
+{
+  "description": "HTML email builder",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-haml": "^0.1.6",
+    "gulp-litmus": "0.0.7",
+    "gulp-premailer": "^0.4.0",
+    "gulp-ruby-haml": "0.0.9",
+    "gulp-sass": "^2.2.0",
+    "gulp-scss-lint": "^0.3.9"
+  }
+}
