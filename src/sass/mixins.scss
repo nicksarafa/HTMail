@@ -1,0 +1,30 @@
+// =============================================================================
+// MIXINS.SCSS / EMAIL SPECIFIC MIXINS 
+// =============================================================================
+
+// VERTICAL ALIGN HELPER
+// -----------------------------------------------------------------------------
+
+.align {
+ &-bottom { vertical-align: bottom; }
+ &-middle { vertical-align: middle; }
+ &-top    { vertical-align: top; }
+}
+
+// TEXT ALIGN HELPER
+// -----------------------------------------------------------------------------
+
+.text-align {
+ &-center { text-align: center; }
+ &-left 	{ text-align: left; }
+ &-right  { text-align: right; }
+}
+
+// VERTICAL BREAKS / INJECT SPACE BETWEEN THIS AND ELEMENT ABOVE 
+// -----------------------------------------------------------------------------
+
+.head-space { padding-top: 15px !important; }
+
+.full-page-break { padding-top: 300px !important; }
+.half-page-break { padding-top: 150px !important; }
+.third-page-break { padding-top: 100px !important; }

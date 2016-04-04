@@ -1,0 +1,62 @@
+// =============================================================================
+// STYLES.SCSS / IMPORT STYLE MODULES / DECLARE CUSTOM STYLES 
+// =============================================================================
+
+// IMPORT MODULES
+// -----------------------------------------------------------------------------
+
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'typography.scss';
+@import 'colors.scss';
+@import 'tables.scss';
+@import 'override.scss';
+
+// UNIVERSAL / APPLIES TO EVERY ELEMENT
+// -----------------------------------------------------------------------------
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+// LINKS
+// -----------------------------------------------------------------------------
+
+a,
+a:link {
+	color: color('primary', 'base');
+	text-decoration: underline;
+
+	&:visited,
+	&:focus,
+	&:hover {
+		color: color('secondary', 'font');
+		text-decoration: none;
+	}
+}
+
+// BODY
+// -----------------------------------------------------------------------------
+
+body,
+#body_outer {
+	background: color('primary', 'dark');
+	color: color('primary', 'font');
+	font-family: $font-family;
+	font-size: $font-size-sm;
+	min-height: $email-min-height !important;
+	line-height: 1.6em; 
+}
+
+// IMAGES 
+// -----------------------------------------------------------------------------
+
+img { vertical-align: top; }
+
+// WHITE BORDER 
+// -----------------------------------------------------------------------------
+
+//#body_inner {
+//	border: 4px color('primary', 'font') solid;
+//}

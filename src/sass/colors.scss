@@ -1,0 +1,20 @@
+// =============================================================================
+// COLORS.SCSS
+// =============================================================================
+
+$colors: (
+    primary: (
+        base: #99ca3c,
+				font: #ffffff,
+        light: #c3c3c3,
+        dark: #4e5255
+    ),
+    secondary: (
+        base: #6ecad5,
+				font: #f4f5f5
+    )
+);
+
+@function color($color, $tone: 'base') {
+    @return map-get(map-get($colors, $color), $tone);
+}

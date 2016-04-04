@@ -1,0 +1,70 @@
+// =============================================================================
+// EXTERNAL.SCSS / HOTMAIL & OUTLOOK SPECIFIC EXTERNAL CLASS OVERRIDE STYLES 
+// =============================================================================
+
+// WHAT IS THIS
+// -----------------------------------------------------------------------------
+//
+// When an email is pulled into Outlook.com / Hotmail, any style rules present 
+// in the email are appended with .ExternalClass. Normalizing a few of these can 
+// help create a baseline for you to work from.
+// 
+// REFERENCES
+// -----------------------------------------------------------------------------
+//
+// * http://templates.mailchimp.com/development/css/client-specific-styles/ 
+//
+// -----------------------------------------------------------------------------
+
+// Body Override
+// -----------------------------------------------------------------------------
+
+body { 
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%; 
+}
+
+// External Class Override
+// -----------------------------------------------------------------------------
+
+.ExternalClass { 
+	width: 100%;
+
+	& div,
+	& font,
+	& p,
+	& span,
+	& td { line-height: 100%; }
+}
+
+// Image Override
+// -----------------------------------------------------------------------------
+
+img { -ms-interpolation-mode: bicubic; }
+
+// Outlook Override
+// -----------------------------------------------------------------------------
+
+#outlook a { padding: 0; }
+
+// Table Overrride
+// -----------------------------------------------------------------------------
+
+table {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+
+// Typography Overrride
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}

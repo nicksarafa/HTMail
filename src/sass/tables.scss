@@ -1,0 +1,44 @@
+// =============================================================================
+// TABLES.SCSS / TABLE STYLES FOR HTML EMAILS ONLY 
+// =============================================================================
+
+// PLEASE READ PRIOR TO ALTERING THE TABLE MODULE 
+// -----------------------------------------------------------------------------
+//
+// If you are not familiar with HTML Emails relationship with CSS tables, you 
+// need to read up on their basic functions and why after tables have been
+// deprecated across everything else on the web they are the core of HTML emails
+// and which 'deprecated' attributes are still critical to maintaining robust,
+// scalable HTMails
+// 
+// REFERENCES
+// -----------------------------------------------------------------------------
+//
+// * https://css-tricks.com/complete-guide-table-element/
+//
+// -----------------------------------------------------------------------------
+
+// IMPORTS
+// -----------------------------------------------------------------------------
+@import 'variables.scss';
+
+// TABLES STRUCTURE 
+// -----------------------------------------------------------------------------
+
+table { 
+	border-collapse: collapse;
+	height: auto !important;
+	margin: auto !important;
+	table-layout: fixed;
+	width: $email-max-width !important;
+}
+
+td { 
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	width: ($email-max-width / 2);
+}
+
+tr { width: $email-max-width; }

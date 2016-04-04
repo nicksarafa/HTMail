@@ -1,0 +1,40 @@
+// =============================================================================
+// RESET.SCSS / RESET STYLES FOR SPECIFIC EMAIL VENDORS 
+// =============================================================================
+
+// WHY? 
+// -----------------------------------------------------------------------------
+//
+// Just as in traditional web development, it’s a good idea to provide some 
+// reset CSS to the emails you build. For the same reason it’s done when 
+// building a site, adding a reset to an email helps to normalize how the code
+// gets rendered across multiple email clients. The email templates provided by 
+// this reference rely on the following reset 
+//
+// -----------------------------------------------------------------------------
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#bodyTable {
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+}
+
+img {
+	border: 0 none;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+
+	a & { border: 0 none; }
+}
+
+.imageFix { display: block; }
+
+table, td { border-collapse: collapse; }

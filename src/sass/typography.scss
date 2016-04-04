@@ -1,0 +1,57 @@
+// =============================================================================
+// TYPOGRAPHY.SCSS / FONT SIZES AND STYLES 
+// =============================================================================
+
+// BASE IMPORT(S) 
+// -----------------------------------------------------------------------------
+
+@import 'variables.scss';
+
+// IMPORT MULI FONTS / INCLUDES LIGHT AND REGULAR 'MULI' FONTS
+// -----------------------------------------------------------------------------
+
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+
+// HEADERS 
+// -----------------------------------------------------------------------------
+
+h1,
+h2 { text-align: center; }
+
+h1,
+h2,
+h3 { line-height: 2em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: color('primary', 'font') !important;
+	font-family: $font-family;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 { font-size: $font-size-xl !important; }
+h2 { font-size: $font-size-lg !important; }
+h3 { font-size: $font-size-md !important; }
+h4 { font-size: $font-size-sm !important; }
+
+// PARAGRAPH 
+// -----------------------------------------------------------------------------
+
+p { font-size: $font-size-sm !important; }
+
+// FOOTER 
+// -----------------------------------------------------------------------------
+
+.footer { font-size: $font-size-xs !important; }
+
+// RECIPIENT NAME 
+// -----------------------------------------------------------------------------
+
+.recipient-name { padding-top: 15px; }

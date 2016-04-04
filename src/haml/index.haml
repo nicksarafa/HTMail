@@ -1,0 +1,30 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title \#{{campaignEmailSubject}}
+    %link{:href => "css/styles.css", :rel => "stylesheet"}/
+  %body
+    %div#body_outer
+      %table#body_inner{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => "600"}
+
+        -# RENDER WELCOME PARTIAL 
+        -# -----------------------------------------------------------------------------
+
+        = Haml::Engine.new(File.read('src/haml/modules/_hello.haml')).render
+
+        -# RENDER CONTENT PARTIAL 
+        -# -----------------------------------------------------------------------------
+
+        = Haml::Engine.new(File.read('src/haml/modules/_content.haml')).render
+
+        -# RENDER SUPPORT PARTIAL 
+        -# -----------------------------------------------------------------------------
+
+        = Haml::Engine.new(File.read('src/haml/modules/_support.haml')).render
+
+        -# RENDER FOOTER PARTIAL 
+        -# -----------------------------------------------------------------------------
+
+        = Haml::Engine.new(File.read('src/haml/modules/_footer.haml')).render
